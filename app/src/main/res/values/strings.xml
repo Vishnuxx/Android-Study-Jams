@@ -5,7 +5,21 @@
     <string name="bus_tracking_made_simple">Bus Tracking made simple</string>
     <string name="who_are_you">Who Are You?</string>
     <string name="bus_driver">Bus Driver</string>
-    <string name="student">Student</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="student">Student</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+
+    <string name="as">as </string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="signup">SignUp</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="username">Username</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

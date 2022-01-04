@@ -4,10 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/gradient_bg.xml" value="0.31145833333333334" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.3260416666666667" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.20203921482581755" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.21154788915379308" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22146739130434784" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_question.xml" value="0.1613638069777799" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.12990833285570366" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.1546875" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.39444459478193483" />
+        <entry key="app/src/main/res/layout/fragment_home2.xml" value="0.140625" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1669505960407557" />
+        <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.1546875" />
+        <entry key="app/src/main/res/layout/fragment_signup.xml" value="0.23194152688022454" />
       </map>
     </option>
   </component>

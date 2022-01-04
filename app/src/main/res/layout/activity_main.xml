@@ -5,6 +5,7 @@
     android:id="@+id/constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:gravity="start"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -13,6 +14,7 @@
         android:id="@+id/bg_illustration1"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="#FFFFFF"
         android:contentDescription="@string/bgimage"
         android:scaleType="fitEnd"
         app:layout_constraintBottom_toBottomOf="parent"
