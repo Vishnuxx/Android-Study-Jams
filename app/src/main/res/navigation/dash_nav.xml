@@ -2,19 +2,20 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
-    app:startDestination="@id/homeFragment">
+    android:id="@+id/dash_nav"
+    app:startDestination="@id/homeFragment2">
+
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/homeFragment2"
         android:name="com.ideologics.BusTopper.fragments.HomeFragment"
         android:label="HomeFragment" />
     <fragment
-        android:id="@+id/notificationFragment"
+        android:id="@+id/notificationFragment2"
         android:name="com.ideologics.BusTopper.fragments.NotificationFragment"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" />
     <fragment
-        android:id="@+id/profileFragment"
+        android:id="@+id/profileFragment2"
         android:name="com.ideologics.BusTopper.fragments.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />

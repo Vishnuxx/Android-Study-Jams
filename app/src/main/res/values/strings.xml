@@ -22,4 +22,13 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="profile">profile</string>
+    <string name="current_bus_location">Current Bus Location</string>
+    <string name="_1_km">1 km</string>
+    <string name="distance_from_your_location">Distance from your Location</string>
+
+    <string name="will_arrive_within">Will arrive within</string>
+    <string name="_10mins_30sec">10mins 30sec</string>
+    <string name="your_location">Your Location</string>
+    <string name="palayam">Palayam</string>
 </resources>
