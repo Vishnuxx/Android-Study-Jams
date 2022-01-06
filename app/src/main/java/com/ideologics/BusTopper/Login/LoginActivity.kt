@@ -1,9 +1,10 @@
-package com.ideologics.BusTopper
+package com.ideologics.BusTopper.Login
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import com.ideologics.BusTopper.R
 
 
 class LoginActivity : AppCompatActivity() {

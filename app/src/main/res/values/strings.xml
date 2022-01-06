@@ -5,7 +5,7 @@
     <string name="bus_tracking_made_simple">Bus Tracking made simple</string>
     <string name="who_are_you">Who Are You?</string>
     <string name="bus_driver">Bus Driver</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="student">Student</string>
@@ -31,4 +31,7 @@
     <string name="_10mins_30sec">10mins 30sec</string>
     <string name="your_location">Your Location</string>
     <string name="palayam">Palayam</string>
+    <string name="join_bus">Join Bus</string>
+    <string name="next">Next</string>
+    <string name="code">code</string>
 </resources>

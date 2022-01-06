@@ -1,4 +1,4 @@
-package com.ideologics.BusTopper.fragments
+package com.ideologics.BusTopper.fragments.Login
 
 import android.os.Bundle
 import android.view.LayoutInflater
