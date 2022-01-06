@@ -1,4 +1,4 @@
-package com.ideologics.BusTopper.fragments
+package com.ideologics.BusTopper.fragments.SignUp
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+
 import com.ideologics.BusTopper.R
 
 class Signup : Fragment() {

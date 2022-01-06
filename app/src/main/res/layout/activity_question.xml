@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:backgroundTint="#FFF2C3"
     android:elevation="0dp"
-    tools:context=".QuestionActivity">
+    tools:context=".Question.QuestionActivity">
 
     <ImageView
         android:id="@+id/imageView"
