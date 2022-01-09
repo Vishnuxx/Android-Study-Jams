@@ -34,4 +34,16 @@
     <string name="join_bus">Join Bus</string>
     <string name="next">Next</string>
     <string name="code">code</string>
+    <string name="bustopper">BusTopper</string>
+    <string name="details">Details</string>
+    <string name="bus_number">Bus Number :</string>
+    <string name="starting_point">Starting Point :</string>
+    <string name="ending_point">Ending Point :</string>
+    <string name="_10">10</string>
+    <string name="nedumangad">Nedumangad</string>
+    <string name="peroorkada">Peroorkada</string>
+    <string name="smart_drivers">Smart Drivers</string>
+    <string name="start">Start</string>
+    <string name="start">Start</string>
+    <string name="todo">TODO</string>
 </resources>
