@@ -14,6 +14,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_question.xml" value="0.1786790575784144" />
         <entry key="app/src/main/res/layout/activity_stepper.xml" value="0.23706762929453615" />
+        <entry key="app/src/main/res/layout/activity_student_dashboard.xml" value="0.21637809981212264" />
         <entry key="app/src/main/res/layout/fragment_buscode.xml" value="0.20425724637681159" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.1546875" />
         <entry key="app/src/main/res/layout/fragment_driverCode.xml" value="0.1395280131060013" />
