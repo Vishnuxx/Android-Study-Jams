@@ -26,6 +26,8 @@ class fragment_drivercode : Fragment() {
                 view.findNavController().navigate(R.id.action_drivercode_to_login2)
         }
 
+
+
         return view
     }
 

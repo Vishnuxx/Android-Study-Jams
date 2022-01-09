@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/signup"
-        android:name="com.ideologics.BusTopper.fragments.SignUp.Signup"
+        android:name="com.ideologics.BusTopper.Login.fragments.Signup"
         android:label="fragment_signup"
         tools:layout="@layout/fragment_signup" >
         <action
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/login"
-        android:name="com.ideologics.BusTopper.fragments.Login.Login"
+        android:name="com.ideologics.BusTopper.Login.fragments.Login"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
