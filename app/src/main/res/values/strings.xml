@@ -28,10 +28,49 @@
     <string name="distance_from_your_location">Distance from your Location</string>
 
     <string name="will_arrive_within">Will arrive within</string>
-    <string name="_10mins_30sec">10mins 30sec</string>
+    <string name="ten_mins_30sec">10mins 30sec</string>
     <string name="your_location">Your Location</string>
     <string name="palayam">Palayam</string>
     <string name="join_bus">Join Bus</string>
     <string name="next">Next</string>
     <string name="code">code</string>
+
+
+    <string name="details">Details</string>
+    <string name="bus_number">Bus Number :</string>
+    <string name="starting_point">Starting Point :</string>
+    <string name="ending_point">Ending Point :</string>
+    <string name="_10">10</string>
+    <string name="nedumangad">Nedumangad</string>
+    <string name="peroorkada">Peroorkada</string>
+    <string name="smart_drivers">Smart Drivers</string>
+    <string name="start">Start</string>
+
+    <string name="todo">TODO</string>
+
+    <string name="name">BottomSheetExample</string>
+    <string name="btn_persistent">Persistent Bottom Sheet</string>
+    <string name="btn_modal">Modal Bottom Sheet</string>
+    <string name="tv_title">Learn Bottom Sheet</string>
+    <string name="tv_description">
+        A BottomSheet is a component that is used to display some information by sliding
+        the view up in the screen and also you can hide this BottomSheet when the message
+        is conveyed to the users. This is a nice way of conveying some message or performing
+        some task in Android. Types of BottomSheet \n\nA BottomSheet is of two types: \n\nPersistent BottomSheet \n\nModal BottomSheet</string>
+    <string name="btn_one">Button 1</string>
+    <string name="btn_two">Button 2</string>
+    <string name="btn_three">Button 3</string>
+    <string name="route_map">Route Map</string>
+    <string name="smart_students">Smart Students</string>
+    <string name="_00_00">00:00</string>
+    <string name="tracking">Tracking</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="late_by">Late by</string>
+    <string name="_10mins">10mins</string>
+    <string name="routemap">RouteMap</string>
+    <string name="add_boarding_point">Add Boarding Point</string>
+    <string name="time">time</string>
+    <string name="submit">Submit</string>
+    <string name="location">location</string>
+    <string name="name_">name</string>
 </resources>

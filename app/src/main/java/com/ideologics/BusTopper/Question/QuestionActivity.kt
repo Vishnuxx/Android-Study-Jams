@@ -10,52 +10,64 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.ideologics.BusTopper.Login.AccountsActivity
 import com.ideologics.BusTopper.R
+import com.ideologics.BusTopper.Utils
+import com.ideologics.room.Inventory.ItemRoomDatabase
 
 class QuestionActivity : AppCompatActivity() {
 
 
 
     lateinit var  viewModel : QuestionViewModel
+    lateinit var database: ItemRoomDatabase
+    private lateinit var studentBtn: Button
+    private lateinit var driverBtn : Button
+    private lateinit var usertypeDisplay : TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question)
 
-
-
-        val studentBtn: Button = findViewById(R.id.student_btn)
-        val driverBtn : Button = findViewById(R.id.driver_btn)
-        val usertypeDisplay : TextView = findViewById(R.id.typedisplay)
-
+        //database = LDatabase.getDatabase(this.applicationContext)
         viewModel = ViewModelProvider(this).get(QuestionViewModel::class.java)
+
+        init()
+        initLogic()
+
+
+
+    }
+
+    fun init() {
+        studentBtn = findViewById(R.id.student_btn)
+        driverBtn = findViewById(R.id.driver_btn)
+        usertypeDisplay = findViewById(R.id.typedisplay)
+    }
+
+    fun initLogic() {
 
         viewModel.userType.observe(this , Observer {
             if(viewModel.userType.value != ""){
                 usertypeDisplay.visibility = View.VISIBLE
                 usertypeDisplay.text = viewModel.userType.value .toString()
-
             }
         })
 
 
         studentBtn.setOnClickListener {
-
             viewModel.userType.value = "Student"
-            //navigate()
-
-
+            Utils.putString(this.applicationContext , "userType" , "Student")
+            navigate()
         }
 
         driverBtn.setOnClickListener {
             viewModel.userType.value = "Driver"
+            Utils.putString(this.applicationContext , "userType" , "Driver")
             navigate()
-
         }
 
-
-
     }
+
 
     fun navigate() {
         startActivity(Intent(this, AccountsActivity::class.java))

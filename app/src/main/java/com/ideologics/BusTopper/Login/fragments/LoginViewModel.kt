@@ -1,4 +1,4 @@
-package com.ideologics.BusTopper.Login
+package com.ideologics.BusTopper.Login.fragments
 
 import androidx.lifecycle.ViewModel
 

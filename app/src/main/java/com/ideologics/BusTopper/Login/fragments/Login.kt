@@ -1,7 +1,7 @@
 package com.ideologics.BusTopper.Login.fragments
 
+import android.content.Context
 import android.content.Intent
-import android.os.Binder
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,12 +14,11 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
-import com.ideologics.BusTopper.Login.LoginViewModel
-import com.ideologics.BusTopper.MainActivity
+import com.google.firebase.database.*
+import com.ideologics.BusTopper.DriverActivity.DriverDashBoardActivity
 import com.ideologics.BusTopper.R
-import com.ideologics.BusTopper.databinding.FragmentLoginBinding
-import com.ideologics.BusTopper.databinding.FragmentSignupBinding
-import org.w3c.dom.Text
+import com.ideologics.BusTopper.StudentActivity.StudentDashboardActivity
+import com.ideologics.BusTopper.Utils
 
 
 class Login : Fragment() {
@@ -27,6 +26,9 @@ class Login : Fragment() {
     private lateinit var viewModel : LoginViewModel
     private  lateinit var rootView: View
     private lateinit var fAuth: FirebaseAuth
+    private lateinit var fDB : FirebaseDatabase
+    private lateinit var dbReference : DatabaseReference
+    private lateinit var mContext : Context
 
 
 
@@ -41,6 +43,7 @@ class Login : Fragment() {
         rootView = inflater.inflate(R.layout.fragment_login, container, false)
         viewModel  = ViewModelProvider(this).get(LoginViewModel::class.java)
 
+        mContext = container!!.context
 
         init()
         initLogic()
@@ -51,20 +54,19 @@ class Login : Fragment() {
 
     fun init() {
         fAuth = FirebaseAuth.getInstance()
+        fDB = FirebaseDatabase.getInstance()
+        dbReference  = fDB.getReference("/Users/")
 
         loginBtn = rootView.findViewById(R.id.login_btn)
         email_inp = rootView.findViewById(R.id.email_txt)
         pass_inp = rootView.findViewById(R.id.pass_txt)
         signuptxt = rootView.findViewById(R.id.signuptxt)
 
-
-
     }
 
 
 
     fun initLogic() {
-
 
         loginBtn.setOnClickListener {
             firebaseAuthLogin()
@@ -83,18 +85,11 @@ class Login : Fragment() {
             val login = fAuth.signInWithEmailAndPassword(viewModel.email , viewModel.pass)
             val context = this.context
 
-            login.addOnCompleteListener {
-                if(it.isSuccessful) {
-                    Toast.makeText(context , "Login Success" , Toast.LENGTH_SHORT).show()
-                }else{
-                    Toast.makeText(context , "Login Failed" , Toast.LENGTH_SHORT).show()
-
-                }
-            }
 
             login.addOnSuccessListener {
                 Toast.makeText(context , "Login successful" , Toast.LENGTH_SHORT).show()
-                startActivity(Intent(context , MainActivity::class.java))
+                navigateToDashboard()
+
             }
 
             login.addOnFailureListener {
@@ -103,6 +98,26 @@ class Login : Fragment() {
         }else{
 
         }
+    }
 
+
+    fun navigateToDashboard() {
+        dbReference.child(Utils.getString(mContext ,"userType")!!).child(fAuth.uid!!).addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot){
+                //Toast.makeText(context , dataSnapshot.child("user").value.toString() , Toast.LENGTH_SHORT).show()
+                when(dataSnapshot.child("user").value.toString()) {
+                    "Driver" -> {
+                        startActivity(Intent(context , DriverDashBoardActivity::class.java))
+                    }
+
+                    "Student" -> {
+                        startActivity(Intent(context , StudentDashboardActivity::class.java))
+                    }
+                }
+            }
+            override fun onCancelled(error: DatabaseError) {
+
+            }
+        })
     }
 }
