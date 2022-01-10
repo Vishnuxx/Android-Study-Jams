@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         if(fAuth.currentUser != null) {
             fReference.child(Utils.getString(context , "userType")!!).child(fAuth.uid!!).addListenerForSingleValueEvent(object : ValueEventListener{
                 override fun onDataChange(dataSnapshot: DataSnapshot){
-                    Log.d("vishnuxxxxxxxxxxx" , dataSnapshot.child("user").value.toString())
+
                     when(dataSnapshot.child("user").value.toString()) {
                         "Driver" -> {
                             startActivity(Intent(context , DriverDashBoardActivity::class.java))

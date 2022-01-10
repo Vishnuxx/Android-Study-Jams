@@ -36,12 +36,11 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/back"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_margin="8dp"
                 android:contentDescription="@string/app_name"
-                app:srcCompat="@drawable/user"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24"
                 tools:ignore="ImageContrastCheck" />
 
             <TextView
@@ -50,6 +49,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
+                android:paddingLeft="8dp"
                 android:text="@string/routemap"
                 android:textSize="20sp" />
 

@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.ideologics.BusTopper.DriverCodeActivity
 import com.ideologics.BusTopper.Login.AccountsActivity
 import com.ideologics.BusTopper.R
 import com.ideologics.BusTopper.Utils
@@ -57,19 +58,19 @@ class QuestionActivity : AppCompatActivity() {
         studentBtn.setOnClickListener {
             viewModel.userType.value = "Student"
             Utils.putString(this.applicationContext , "userType" , "Student")
-            navigate()
+            startActivity(Intent(this, DriverCodeActivity::class.java))
+
         }
 
         driverBtn.setOnClickListener {
             viewModel.userType.value = "Driver"
             Utils.putString(this.applicationContext , "userType" , "Driver")
-            navigate()
+            startActivity(Intent(this, AccountsActivity::class.java))
+
         }
 
     }
 
 
-    fun navigate() {
-        startActivity(Intent(this, AccountsActivity::class.java))
-    }
+
 }

@@ -2,10 +2,12 @@ package com.ideologics.BusTopper.StudentActivity
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.ideologics.BusTopper.ProfileActivity.ProfileActivity
 import com.ideologics.BusTopper.R
 import com.ideologics.BusTopper.RouteActivity.RoutesActivity
 import com.ideologics.BusTopper.Utils
@@ -35,6 +37,13 @@ class StudentDashboardActivity : AppCompatActivity() {
         fab.setOnClickListener {
             startActivity(Intent(this.applicationContext , RoutesActivity::class.java))
         }
+
+        val profile : ImageView = findViewById(R.id.profile_icon)
+        profile.setOnClickListener{
+            startActivity(Intent(this , ProfileActivity::class.java))
+        }
+
+
 
     }
 }

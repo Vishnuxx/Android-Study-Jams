@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.ideologics.BusTopper.MapsActivity
 import com.ideologics.BusTopper.ProfileActivity.ProfileActivity
 import com.ideologics.BusTopper.R
 import com.ideologics.BusTopper.RouteActivity.RoutesActivity
@@ -39,7 +38,7 @@ class DriverDashBoardActivity : AppCompatActivity() {
     }
 
     private fun initLogic() {
-
+        buttonImg.setBackgroundResource(R.drawable.driver_btn_bg_selected)
         trackbutton.setOnClickListener {
             isTracking = !isTracking
             if(isTracking){

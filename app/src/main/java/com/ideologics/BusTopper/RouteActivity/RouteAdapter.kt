@@ -1,11 +1,14 @@
 package com.ideologics.BusTopper.RouteActivity
 
 import android.content.Context
+import android.graphics.Color
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.ideologics.BusTopper.R
 import com.ideologics.room.Inventory.ItemRoomDatabase
@@ -33,7 +36,13 @@ class RouteAdapter(data : ArrayList<Location>) : RecyclerView.Adapter<RouteAdapt
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        Log.d("___________OPPPP" , data.toString())// this.data?.get(position).toString())
+        if(data?.get(position)?.hasReached && data?.get(position)?.hasReached != null){
+            holder.node.setCardBackgroundColor(Color.parseColor("#47A450"))
+            holder.connector.setBackgroundColor(Color.parseColor("#47A450"))
+        }else{
+            holder.node.setCardBackgroundColor(Color.parseColor("#E5E5E5"))
+            holder.connector.setBackgroundColor(Color.parseColor("#E5E5E5"))
+        }
         holder.itemTitle.text = data?.get(position)?.name
     }
 
@@ -41,10 +50,13 @@ class RouteAdapter(data : ArrayList<Location>) : RecyclerView.Adapter<RouteAdapt
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var itemTitle : TextView
+        var connector : LinearLayout
+        var node : CardView
 
         init {
             itemTitle = itemView.findViewById(R.id.title)
-
+            connector = itemView.findViewById(R.id.connector)
+            node = itemView.findViewById(R.id.node)
 
         }
 

@@ -9,7 +9,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.textfield.TextInputEditText
 import com.ideologics.BusTopper.R
+import com.ideologics.BusTopper.Utils
 import java.lang.Exception
 
 
@@ -21,9 +23,11 @@ class fragment_drivercode : Fragment() {
         val view =  inflater.inflate(R.layout.fragment_drivercode, container, false)
 
         val nextBtn : Button = view.findViewById(R.id.buttonNxt)
-
+        val editText : TextInputEditText = view.findViewById(R.id.input)
+        val context = this.context
         nextBtn.setOnClickListener {
-                view.findNavController().navigate(R.id.action_drivercode_to_login2)
+                Utils.putString( context!! ,"driverUrl" , editText.text.toString())
+                view.findNavController().navigate(R.id.action_fragment_drivercode2_to_signup)
         }
 
 
