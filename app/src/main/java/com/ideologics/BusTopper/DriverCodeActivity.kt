@@ -16,6 +16,7 @@ class DriverCodeActivity : AppCompatActivity() {
         val editText : TextInputEditText = findViewById(R.id.input)
         val context = this.applicationContext
         nextBtn.setOnClickListener {
+
             Utils.putString( context!! ,"driverUrl" , editText.text.toString())
             startActivity(Intent(context , AccountsActivity::class.java))
         }
