@@ -55,4 +55,6 @@ We aim to implement the following features by the end of this year as updates:
 - Build a new category of user which will be mainly used by bus administrators and institution owners to schedule and control drivers
 - some security improvements and enhanced backend system design
 - Embedded support for GPS systems and NFC systems
+- Build a in-app seating arrangement system which extensively helps in covid management by analysing and tracking which all students were in primary and secondary contacts
+
 
