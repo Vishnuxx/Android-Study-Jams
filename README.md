@@ -22,6 +22,10 @@ Provide starting and ending locations with appropriate time schedules according 
 Single tap-in app location tracking feature using Google Maps API so students can track the bus in real time. 
 Set custom boarding points at any time within schedule and be updated with a ETA of the bus to their boarding point. 
 
+Every Driver users will get a unique id after creating an account in this app. This id can be shared with students to join the bus. The "JOIN BUS" screen in this app helps students to register with their bus via pasting the unique code given by their bus driver.
+
+Drivers can approve the valid students who were joined via this unique code.
+
 <b>Functionality and Concepts Used:</b>
 
 - Livedata & ViewModel : To seperate business logic and data MVVM
