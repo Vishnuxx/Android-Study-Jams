@@ -1,4 +1,4 @@
-# BusTopper (MCBT)
+# BusTopper
 
 Bus Tracking app
 
