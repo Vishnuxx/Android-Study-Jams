@@ -54,4 +54,5 @@ We aim to implement the following features by the end of this year as updates:
 - Build NFC and QR code system
 - Build a new category of user which will be mainly used by bus administrators and institution owners to schedule and control drivers
 - some security improvements and enhanced backend system design
+- Embedded support for GPS systems and NFC systems
 
