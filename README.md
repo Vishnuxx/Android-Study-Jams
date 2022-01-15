@@ -26,6 +26,10 @@ Every Driver users will get a unique id after creating an account in this app. T
 
 Drivers can approve the valid students who were joined via this unique code.
 
+For testing purpose , you can join with this sample code.
+
+    Bustopper-fZXBXLGE9Se2IPoxI3bSRYeTLJq2
+
 <b>Functionality and Concepts Used:</b>
 
 - Livedata & ViewModel : To seperate business logic and data MVVM
