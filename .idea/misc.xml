@@ -3,19 +3,45 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1734375" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/bg_3.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/driver_btn_bg.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/drawable/driver_btn_bg_selected.xml" value="0.45" />
+        <entry key="app/src/main/res/drawable/driver_btn_bg_unselect.xml" value="0.45" />
+        <entry key="app/src/main/res/drawable/grad_bg2.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/drawable/gradient_bg.xml" value="0.31145833333333334" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.3260416666666667" />
-        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.21154788915379308" />
+        <entry key="app/src/main/res/drawable/icons8_location.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/font/lato.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.2068111169039719" />
+        <entry key="app/src/main/res/layout/activity_driver_code.xml" value="0.14479166666666668" />
+        <entry key="app/src/main/res/layout/activity_driver_dash_board.xml" value="0.16377102147515937" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.22146739130434784" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_question.xml" value="0.1613638069777799" />
+        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.17798913043478262" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.243987165287803" />
+        <entry key="app/src/main/res/layout/activity_question.xml" value="0.1786790575784144" />
+        <entry key="app/src/main/res/layout/activity_routes.xml" value="0.24135420725955745" />
+        <entry key="app/src/main/res/layout/activity_stepper.xml" value="0.23706762929453615" />
+        <entry key="app/src/main/res/layout/activity_student_dashboard.xml" value="0.2083242173260578" />
+        <entry key="app/src/main/res/layout/add_location_alert.xml" value="0.22282608695652173" />
+        <entry key="app/src/main/res/layout/fragment_buscode.xml" value="0.20425724637681159" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.1546875" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.39444459478193483" />
+        <entry key="app/src/main/res/layout/fragment_driverCode.xml" value="0.1395280131060013" />
+        <entry key="app/src/main/res/layout/fragment_drivercode.xml" value="0.2441123188405797" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18105890377073042" />
         <entry key="app/src/main/res/layout/fragment_home2.xml" value="0.140625" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1669505960407557" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.15163469697932425" />
+        <entry key="app/src/main/res/layout/fragment_notification.xml" value="0.16770833333333332" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.1546875" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/fragment_route.xml" value="0.15985657030513753" />
         <entry key="app/src/main/res/layout/fragment_signup.xml" value="0.23194152688022454" />
+        <entry key="app/src/main/res/layout/route_bottomsheet.xml" value="0.1838768115942029" />
+        <entry key="app/src/main/res/layout/sample_vertical_stepper.xml" value="0.17239583333333333" />
+        <entry key="app/src/main/res/layout/vertical_stepper.xml" value="0.1609375" />
+        <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.16458333333333333" />
       </map>
     </option>
   </component>
