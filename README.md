@@ -1,10 +1,10 @@
-#BusTopper (MCBT)
+# BusTopper (MCBT)
+
+Bus Tracking app
 
 <b> Problem Statement: </b>
 
-With the rise in covid cases, it is unsafe to stay in public places for a long duration. Public bus stops can be a source of spreading in terms of covid infections, avoiding contact and exposure is the best way, but unfortunately, due to heavy traffic in the cities – college buses arrive at varied intervals of time, leading students to come 15-20 minutes earlier. We at Marian Engineering College have devised a solution for our fellow students. A Mobile Application that is accessible by all students using the bus service. ![photo_2022-01-15_22-45-38](https://user-images.githubusercontent.com/74808440/149631315-65a9cbaa-b55d-4118-a9c4-0d279f1789ee.jpg)
-
-![photo_2022-01-15_22-45-36](https://user-images.githubusercontent.com/74808440/149631313-9c730a27-7551-4dab-847a-574f3701b9f0.jpg)
+With the rise in covid cases, it is unsafe to stay in public places for a long duration. Public bus stops can be a source of spreading in terms of covid infections, avoiding contact and exposure is the best way, but unfortunately, due to heavy traffic in the cities – college buses arrive at varied intervals of time, leading students to come 15-20 minutes earlier. We at Marian Engineering College have devised a solution for our fellow students. A Mobile Application that is accessible by all students using the bus service. 
 
 <b>Proposed Solution:</b>
 
@@ -50,4 +50,8 @@ We aim to implement the following features by the end of this year as updates:
 - Emergency Alert System
 - Notifying Driver about skipping a student boarding point. 
 - Informing Campus about late arrival with new ETA.
+- Informs the nearby buses in emergency situations
+- Build NFC and QR code system
+- Build a new category of user which will be mainly used by bus administrators and institution owners to schedule and control drivers
+- some security improvements and enhanced backend system design
 
