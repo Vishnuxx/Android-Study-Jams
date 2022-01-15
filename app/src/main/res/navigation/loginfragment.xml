@@ -4,42 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/loginfragment"
     app:startDestination="@id/login">
+
     <fragment
         android:id="@+id/login"
-        android:name="com.ideologics.BusTopper.Login.fragments.Login"
+        android:name="com.ideologics.BusTopper.fragments.Login"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_login_to_signup"
             app:destination="@id/signup" />
-        <action
-            android:id="@+id/action_login_to_fragment_drivercode2"
-            app:destination="@id/fragment_drivercode2" />
-        <action
-            android:id="@+id/action_login_to_fragment_drivercode22"
-            app:destination="@id/fragment_drivercode2" />
     </fragment>
     <fragment
         android:id="@+id/signup"
-        android:name="com.ideologics.BusTopper.Login.fragments.Signup"
+        android:name="com.ideologics.BusTopper.fragments.Signup"
         android:label="fragment_signup"
         tools:layout="@layout/fragment_signup" >
         <action
             android:id="@+id/action_signup_to_login"
             app:destination="@id/login" />
-        <action
-            android:id="@+id/action_signup_to_fragment_drivercode2"
-            app:destination="@id/fragment_drivercode2" />
-    </fragment>
-    <fragment
-        android:id="@+id/fragment_drivercode2"
-        android:name="com.ideologics.BusTopper.fragments.fragment_drivercode"
-        android:label="fragment_drivercode" >
-        <action
-            android:id="@+id/action_fragment_drivercode2_to_login"
-            app:destination="@id/login" />
-        <action
-            android:id="@+id/action_fragment_drivercode2_to_signup"
-            app:destination="@id/signup" />
     </fragment>
 </navigation>
